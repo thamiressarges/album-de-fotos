@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album de Fotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Meu Álbum de fotos</h2>
+
+    <label id="labelSeletorArquivo" for="seletorArquivo">
+        Carregar Imagem
+    </label>
+
+    <input type="file" id="seletorArquivo" multiple accept="image/*">
+    
+    <div id="galeria"></div>
+
+    <div id="modal" onclick="fecharModal()">
+        <button onclick="removerImagem(event)">Remover Imagem</button>
+
+        <img src="" alt="">
+
+        <p class="descricao">Descrição da imagem</p>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
